@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <audio id="audioAprovado" src="aprovado.mp3"></audio>
+    <title>KING BASE</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #lista {
+            width: 800px;
+            height: 200px;
+            resize: none;
+            background-color: transparent;
+            border: 2px solid dark;
+            color: silver;
+            margin: 20px auto;
+            display: block;
+            padding: 10px;
+        }
+
+        .badge {
+            margin: 0 5px;
+        }
+
+        #start,
+        #stop {
+            width: 150px;
+            outline: none;
+        }
+
+        .btn-outline-info {
+            color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-outline-info:hover {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .btn-success,
+        .btn-danger {
+            width: 90%;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CHECKER BETSUL ACCOUNT</h1>
+        <strong>CODADO POR @kingsv7ofc</strong><br><br>
+        <hr>
+        <textarea id="lista" placeholder="EX: USER|SENHA"></textarea>
+        <div>
+            Status: <span id="status" class="badge badge-warning">Esperando..</span>
+            Aprovadas: <span id="cLive" class="badge badge-success">0</span>
+            Reprovadas: <span id="cDie" class="badge badge-danger">0</span>
+            Testadas: <span id="total" class="badge badge-info">0</span>
+            Total: <span id="carregadas" class="badge badge-dark">0</span>
+        </div>
+        <br>
+        <button class="btn btn-outline-info" id="start">INICIAR</button>
+        <button class="btn btn-outline-info" id="stop">PARAR</button>
+        <hr>
+        <div>
+            <span class="btn btn-success">APROVADAS</span>
+            <div class="aprovadas"></div>
+            <span class="btn btn-danger">REPROVADAS</span>
+            <div class="reprovadas"></div>
+        </div>
+    </div>
+    <script type="module" src="./checkerbetsul.mjs"></script>
+</body>
+
+</html>
